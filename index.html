@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  </head>
+  <body></body>
+  <div class="container mt-4">
+    <h1 class="display-4 text-center">
+      <i class="fas fa-sherbert-open text-primary"></i><span class="text-info">Ice</span><span class="text-primary">Cream</span><span class="text-warning">Shop</span></h1>
+      <form id="sherbert-form">
+        <div class="form-group">
+          <label for="flavor"><span class="text-info">Flavor</span></label>
+          <input type="text" id="flavor" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="cone"><span class="text-primary">Cone</span></label>
+          <input type="text" id="cone" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="topping"><span class="text-warning">Topping</span></label>
+          <input type="text" id="topping" class="form-control">
+        </div>
+        <input type="submit" value="Add Order" class="btn btn-info btn-block">
+      </form>
+      <table class="table table-striped mt-5">
+        <thead>
+          <tr>
+            <th><span class="text-info">Flavor</span></th>
+            <th><span class="text-primary">Cone</span></th>
+            <th><span class="text-warning">Topping</span></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="sherbert-list"></tbody>
+      </table>
+  </div>
+  
+
+<script src="tableform.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</body>
+</html>
